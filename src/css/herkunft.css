@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.hero-herkunft {
+    height: 45vh;
+    width: 100%;
+    background-image: url("../images/img/coffee-beans-hand.png");
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    /*@media (min-width: 576px) {
+        height: 75vh;
+        background-size: cover;
+    }*/
+  }

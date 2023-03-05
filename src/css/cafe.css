@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.hero-cafe {
+  height: 75vh;
+  width: 100%;
+  background-image: url("../images/img/coffee-shop.png");
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/**************************ENDE HERO/Anfang Cafe**********************/
+.cafe-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 4em;
+  height: 100vh;
+}
+.h2m {
+  font-size: var(--h2-m-font-size);
+  font-weight: var(--h2-m-font-weight);
+  line-height: var(--h2-m-line-height);
+}
+.h3m {
+  font-size: var(--h3-m-font-size);
+  font-weight: var(--h3-m-font-weight);
+  line-height: var(--h3-m-line-height);
+}
+.p-frisch {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-m);
+  line-height: var(--line-height-m);
+  padding-top: 2rem;
+}
+.cafe-img {
+  margin-left: auto;
+}
+.tab-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  width: 100%;
+}
+.absatz {
+  padding-top: 2rem;
+  height: 50%;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .tab-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40%;
+    width: 100%;
+  }
+  .cafe-flex {
+    flex-direction: column;
+  }
+  .cafe-img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+  }
+  .cafe-tab {
+    width: 100%;
+    height: auto;
+  }
+  .absatz {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    width: 40%;
+    margin-left: 25%;
+  }
+  .shop-img {
+    height: auto;
+    object-fit: fill;
+    width: 100%;
+  }
+  .p-frisch {
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+    padding-top: 1rem;
+  }
+}
+/***************************ENDE Cafe/ Anfang Bildergalerie******************/
+.bilder{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 60px;
+}
+.img-spalte{
+  flex: 50%;
+  max-width: 50%;
+}
+.danish-img{
+  /*margin-top: 8px;*/
+  vertical-align: middle;
+  width: 100%;
+  padding: 0.5rem;
+}
+@media (min-width: 576px) {
+.img-spalte {
+  flex: 25%;
+  max-width: 25%;
+}
+}
+/*************ENDE Bildergalerie/ Anfang Landkarte**************************/
+.h2l {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 34px;
+  margin-left: 24px;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @media (min-width: 576px) {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 56, 25px;
+  }
+}
+.div-map {
+  position: relative;
+  padding-bottom: 56%;
+  height: 0;
+  overflow: hidden;
+}
+.div-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

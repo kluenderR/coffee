@@ -1,22 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index Page</title>
-    <link rel="stylesheet" href="/css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Oregano"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    {{> header }}
-    <h1>Hello World Test!</h1>
-    <main>
-      <a href="/sub-page/">Link to Subpage</a>
-      <div>Home</div>
-    </main>
-    <script src="/js/index.js" type="module"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaffeerösterei Rustica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css" >
+   <!-- <link rel="stylesheet" href="css/base.css" />-->
+</head>
+<body>
+  <main>
+ <div class="hero-section">
+      {{> header }}
+<!--<header class="header-flex">
+        <p>
+            <img src="images/icons/logo.svg" alt="logo" class="img-logo">
+        </p>
+        <p>
+            <img src="images/icons/burger_menu.svg" alt="hamburger" class="img-burger">
+        </p>
+    </header>-->
+    <section class="section-flex">
+        <hgroup class="hgroup">
+            <h1 class="h1">Rustica</h1>
+            <p role="doc-subtitle" 
+            class="text-header">Bio und Fair seit 1991</p>
+        </hgroup>
+        <div>
+            <a class="header-button" href="#">zum Shop</a>
+        </div>
+    </section>
+ </div>
+
+ <!--ENDE Starseite Anfang INFO-Seite--------------------------------------->
+    <section class="info-flex">
+        <aside class="cafe">
+            <h2 class="h2">Rösterei & Café</h2>
+            <table>
+            <tbody class="tab-cafe">
+                <tr>
+                    <td colspan="2" class="x">Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen Rösterei, serviert im gemütlichen Café in der Innenstadt.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="y">
+                        Komm uns besuchen! Fraunhoferstr. 13, Kiel
+                    </td>
+                    <td>
+                        Mo – Fr 8–18 Uhr<br>Sa 11–18 Uhr
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </aside >
+        <p class="p-img">
+            <img src="images/img/coffee-shop.png" alt="coffee-shop" class="img-shop">  
+        </p>
+        <aside class="bio">
+            <h2 class="h3">Bio und Fair</h2>
+            <p class="bio-section">
+                Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles in bester Bio Qualität mehr
+            
+            </p>
+
+        </aside>
+        <p class="p-img2">
+            <img src="images/img/coffee-plant.png" alt="coffee-plant" class="img-plant">  
+        </p>
+    </section>
+    <!--ENDE Info-Seite Anfang Sorten -Seite------------------------------>
+    <section class="sorten">
+        <p class="p-h2w">
+         <h2 class="h2w">
+            Entdecke unsere<br> Kaffee Sorten
+        </h2>
+        </p>
+        <div class="container">
+                <div class="container-sorte">
+                    <img src="images/img/coffe-sorte.png" alt="Kaffe Sorte Costa Rica" class="img-container">
+                        <div class="container-price">
+                            <p class="text-sorte">
+                                Costa Rica
+                            </p>
+                            <p class="price-sorte">
+                                6,90€ – 26,90€
+                            </p>
+                            <p class="p-span">
+                                <span>
+                                    <img src="images/icons/bohnen.svg" alt="Kaffeebohnen" class="span-bohne">
+                                </span>
+                                <span>
+                                    <img src="images/icons/french_press.svg" alt="French Press" class="span-press">
+                                </span>
+                                <span>
+                                    <img src="images/icons/schaufel.svg" alt="Schaufel" class="span-schaufel">
+                                </span>
+                            </p>
+                        </div>   
+            </div>
+            <div class="container-sorte">
+                <img src="images/img/coffe-sorte.png" alt="Kaffe Sorte Costa Rica" class="img-container">
+                    <div class="container-price">
+                        <p class="text-sorte">
+                            Costa Rica
+                        </p>
+                        <p class="price-sorte">
+                            6,90€ – 26,90€
+                        </p>
+                        <p class="p-span">
+                            <span>
+                                <img src="images/icons/bohnen.svg" alt="Kaffeebohnen" class="span-bohne">
+                            </span>
+                            <span>
+                                <img src="images/icons/french_press.svg" alt="French Press" class="span-press">
+                            </span>
+                            <span>
+                                <img src="images/icons/schaufel.svg" alt="Schaufel" class="span-schaufel">
+                            </span>
+                        </p>
+                    </div>
+            </div>
+            <div class="container-sorte">
+            <img src="images/img/coffe-sorte.png" alt="Kaffe Sorte Costa Rica" class="img-container">
+                <div class="container-price">
+                    <p class="text-sorte">
+                        Costa Rica
+                    </p>
+                    <p class="price-sorte">
+                        6,90€ – 26,90€
+                    </p>
+                    <p class="p-span">
+                        <span>
+                            <img src="images/icons/bohnen.svg" alt="Kaffeebohnen" class="span-bohne">
+                        </span>
+                        <span>
+                            <img src="images/icons/french_press.svg" alt="French Press" class="span-press">
+                        </span>
+                        <span>
+                            <img src="images/icons/schaufel.svg" alt="Schaufel" class="span-schaufel">
+                        </span>
+                    </p>
+                </div>
+        
+            </div>
+             <div class="container-sorte">
+             <img src="images/img/coffe-sorte.png" alt="Kaffe Sorte Costa Rica" class="img-container">
+                <div class="container-price">
+                    <p class="text-sorte">
+                        Costa Rica
+                    </p>
+                    <p class="price-sorte">
+                        6,90€ – 26,90€
+                    </p>
+                    <p class="p-span">
+                        <span>
+                            <img src="images/icons/bohnen.svg" alt="Kaffeebohnen" class="span-bohne">
+                        </span>
+                        <span>
+                            <img src="images/icons/french_press.svg" alt="French Press" class="span-press">
+                        </span>
+                        <span>
+                            <img src="images/icons/schaufel.svg" alt="Schaufel" class="span-schaufel">
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section-flex">
+        <a class="sorten-button" href="#">alle Produkte</a><!--in hero section css-->
+        </div>
+    </section>
+    <!-----------------Ende Sorten Section Anfang Herkunft-------------->
+    <section class="herkunft">
+        <article class="herkunft-flex">
+            <p>
+                <h3 class="h3">Herkunft</h3>
+            </p>
+            <pre class="pre-text">
+            Weit hinten, hinter den Wortbergen, 
+            fern der Länder Vokalien und 
+            Konsonantien leben die Blindtexte.
+            Und das alles in bester Bio Qualität
+            </pre>
+            <P>
+                mehr
+            </P>
+        </article>
+    </section>
+    <!----Ende Seite Herkunft/Anfang Seite das steckt drin-->
+    <p>
+        <h2 class="h2">Das steckt drin</h2>
+    </p>
+    <section class="das-steckt-drin">
+         <p class="container-steckt-drin">
+            <img src="images/img/coffe-sorte.png" alt="Kaffe Sorte Costa Rica" class="img-container">  
+        </p>
+        <div class="p-icons">
+        
+                <div class="drin">
+                    <p>
+                <img src="images/icons/kaffee-tasse.svg" alt="Tasse">
+                    </p>
+                    <p>Bester <br> Geschmack</p>
+                </div>
+                <div class="drin">
+                    <p>
+                    <img src="images/icons/schaufel.svg" alt="Schaufel">
+                    </p>
+                    <p>Fair <br> gehandelt</p>
+                </div>
+                <div class="drin">
+                    <p>
+                    <img src="images/icons/kaffee-pflanze.svg" alt="Pflanze">
+                    </p>
+                    <p>Bio <br> Qualität</p>
+                </div>
+                <div>
+                    <a class="drin-button2" href="#">zum Shop</a><!--in hero section css-->
+                </div>
+        </div>
+        <div >
+            <a class="drin-button" href="#">zum Shop</a><!--in hero section css-->
+        </div>
+    </section>
+    <!-------------ENDE das steckt drin /Anfang Landkarte-------------->
+    <section>
+        <p>
+            <h2 class="h2l">Komm vorbei</h2>
+        </p>
+        <div class="div-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1162.9362461414833!2d10.122764820629197!3d54.34156178267514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560c505797eb%3A0xf549da0f074162a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1676914797271!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"><frameborder="0"></iframe>
+        </div>
+    </section>
+<!-------------------ENDE Map/ ANFANG Footer-->
+
+        {{> footer }}
+  </main>
+ <!-- <script src="/js/index.js" type="module"></script>  -->
+</body>
 </html>
