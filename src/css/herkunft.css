@@ -19,3 +19,57 @@
         background-size: cover;
     }*/
   }
+  /**************ENDE Hero / Anfang Ursprung ********************/
+  .ursprung {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .ursprung-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  .video{
+    margin-top: 1.5rem;
+    width: 100%;
+   /* @media (min-width: 576px) {
+        poster="/images/video/Bildschirmfoto2.png" 
+    }*/
+  }
+  .ursprung-block{
+    text-align: center;
+    @media (min-width: 576px) {
+        width: 50%;
+        margin: auto;
+        display: left;
+    }
+  }
+  .anbau{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .herkunft-block{
+    text-align: center;
+    @media (min-width: 576px) {
+        width: 50%;
+        margin: auto;
+        display: left;
+    }}
+    .anbau-img{
+    width: 60%;
+    height: auto;
+    object-fit: fill;
+    margin-right: 24px;
+    margin-left: auto;
+    }
+    .img-anbau{
+      margin-right: 24px;
+      margin-left: auto;
+      width: 60%;
+      height: auto;
+  
+    }

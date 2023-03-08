@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  .kontakt-hero{
+    display:flex;
+    justify-content:space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 30vh;
+  
+  }
+  .img-logo2{
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+    margin-right: 24px;
+  }
+  .img-burger2{
+    height: 25px;
+    width: 25px;
+    margin-top: 15px;
+  }
+  .header-nav2{
+    display: none;
+  }
+  
+  @media (min-width: 900px){
+  .img-burger2{
+    display: none;
+  }
+  .nav-liste2{
+    display:flex;
+    justify-content: space-between; 
+    width: 30%;
+    margin-top: 15px;
+    margin-right: 2rem; 
+  }
+  .nav-item2{
+    font-size: var(--font-size);
+    text-decoration: none;
+  }
+  .header-nav2{
+    display: contents;
+   }
+   .header-nav2 ul{
+    list-style-type: none;
+   }
+  .tasche{
+    color: black;
+  }
+  }  
+  form {
+    font-size: 1.3em; 
+    width: 400px; /* Breite des Formulars */
+    padding: 20px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+  label { /* Beschriftung auf eigener Zeile */
+    display: block;
+    cursor: pointer; /* Mauszeiger wird zur Hand */
+    font-weight: bold;
+  }
+  input#absender,
+  textarea {
+    width: 350px;
+    height: 50px ;
+    border: 1px solid white;
+    margin-bottom: 1em;
+  }
+  textarea {
+    height: 15em;
+  }
+  input:focus,
+  textarea:focus {
+    background-color: #d9d9d9;
+  } 
+  .bonbon {
+    width: 13em;
+    height: 2em;
+    font-size:1.25em; font-family: cursive; 
+    color:white;
+    background: linear-gradient(to bottom, white, yellow);
+    box-shadow: inset 0 0 .3em #fff, inset 0 -1px .3em #fff;
+    border: thin solid #5ea617;
+    border-radius: 1em;
+    margin: 1em;
+}
+.bonbon{
+    background: linear-gradient(to bottom, skyblue, blue);
+}
+
+.h2-center {
+    display: block;
+    text-align: center;
+}
+.h2-right{
+    display: block;
+    text-align: right;
+    margin-right: 0px;
+}

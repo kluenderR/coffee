@@ -1,5 +1,5 @@
 import { resolve } from 'path';
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 import { imagetools } from 'vite-imagetools';
 import htmlImages from 'vite-plugin-html-images';
 import handlebars from 'vite-plugin-handlebars';
