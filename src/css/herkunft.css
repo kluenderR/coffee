@@ -1,75 +1,108 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 .hero-herkunft {
-    height: 45vh;
-    width: 100%;
-    background-image: url("../images/img/coffee-beans-hand.png");
-    background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    /*@media (min-width: 576px) {
+  height: 45vh;
+  width: 100%;
+  background-image: url("../images/img/coffee-beans-hand.png");
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /*@media (min-width: 576px) {
         height: 75vh;
         background-size: cover;
     }*/
-  }
-  /**************ENDE Hero / Anfang Ursprung ********************/
-  .ursprung {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    width: 100%;
-    margin-top: 2rem;
-  }
-  .ursprung-video{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  
-  }
-  .video{
-    margin-top: 1.5rem;
-    width: 100%;
-   /* @media (min-width: 576px) {
+}
+/**************ENDE Hero / Anfang Ursprung ********************/
+.ursprung {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+.ursprung-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.video {
+  margin-top: 1.5rem;
+  width: 100%;
+  /* @media (min-width: 576px) {
         poster="/images/video/Bildschirmfoto2.png" 
     }*/
+}
+.ursprung-block {
+  text-align: center;
+  @media (min-width: 576px) {
+    width: 50%;
+    margin: auto;
+    display: left;
   }
-  .ursprung-block{
-    text-align: center;
-    @media (min-width: 576px) {
-        width: 50%;
-        margin: auto;
-        display: left;
-    }
+}
+.anbau {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (min-width: 900px) {
+    flex-direction: row;
   }
-  .anbau{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+}
+.herkunft-block {
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  @media (min-width: 576px) {
+    width: 50%;
+    display: left;
   }
-  .herkunft-block{
-    text-align: center;
-    @media (min-width: 576px) {
-        width: 50%;
-        margin: auto;
-        display: left;
-    }}
-    .anbau-img{
+  @media (min-width: 900px) {
+    width: 30%;
+    padding: 40px;
+  }
+}
+.anbau-img {
+  padding-left: 0.5rem;
+  @media (min-width: 900px) {
     width: 60%;
-    height: auto;
-    object-fit: fill;
-    margin-right: 24px;
-    margin-left: auto;
-    }
-    .img-anbau{
-      margin-right: 24px;
-      margin-left: auto;
-      width: 60%;
-      height: auto;
-  
-    }
+    margin-top: 7.0rem;
+    margin-right: 0px;
+  }
+}
+.img-anbau{
+  width: 60%;
+  height: auto;
+  margin-left: 130px;
+  @media (min-width: 900px) {
+    width: 80%;
+    
+    margin-right: 2px
+  }
+}
+.nachhaltigkeit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (min-width: 900px) {
+    flex-direction: row-reverse;
+  }
+}
+.arbeit-img {
+  padding: 0.5rem 0.5rem;
+  @media (min-width: 900px) {
+    width: 50%;
+    margin-top: 6.0rem;
+  }
+}
+.img-arbeit{
+  width: 50%;
+  height: auto;
+  @media (min-width: 900px) {
+    width: 100%;
+  }
+}
