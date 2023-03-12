@@ -52,33 +52,114 @@
     color: black;
   }
   }  
-  form {
-    font-size: 1.3em; 
-    width: 400px; /* Breite des Formulars */
-    padding: 20px;
-    margin-left: auto; 
-    margin-right: auto;
+  /**********ENDE Header/ Anfang Kontaktformular*******************/
+  .kontakt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    @media (min-width: 900px) {
+      flex-direction:row;
+      justify-content: space-between;
+  }
 }
-  label { /* Beschriftung auf eigener Zeile */
+  form {
+    width: 100%; /* Breite des Formulars */
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-m);
+    line-height: var(--line-height-m);
+    @media (min-width: 900px) {
+    width:50%;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+    }
+  }
+    fieldset{
+      border: none;
+	    padding-bottom: 5rem;
+    }
+    input {
+      margin-right: 1.0rem;
+      margin-bottom: 1.5rem;
+      border: none;
+      padding: 0.5rem;
+      border-bottom: 3px solid black;
+      color: rgba(115, 115, 115, 1);
+      width: 100%;
+      @media (min-width: 900px) {
+        font-size: var(--font-size);
+        font-weight: var(--font-weight);
+        line-height: var(--line-height);
+        }
+      
+    }
+    
+    /*label::after {
+      content: "";
+      display: block;
+    }*/
+    
+
+  form label{  /*::-ms-value{ /* Beschriftung auf eigener Zeile */
     display: block;
-    cursor: pointer; /* Mauszeiger wird zur Hand */
-    font-weight: bold;
+    /*cursor: pointer;  Mauszeiger wird zur Hand */
+    /*width: 100%;*/
+    border: none;
+   /* @media (min-width: 900px) {
+      width:50%;
+      font-size: var(--font-size);
+      font-weight: var(--font-weight);
+      line-height: var(--line-height);
+      }*/
+    
+    /*margin-bottom: 1.5rem;*/
+    margin-top: 3.0rem;
   }
   input#absender,
   textarea {
-    width: 350px;
-    height: 50px ;
-    border: 1px solid white;
+    width: 100%;
+    height: 20.0rem ;
+    border: none;
+    border-bottom: 3px solid black;
     margin-bottom: 1em;
+    font-family: inherit;
+    @media (min-width: 900px) {
+      font-size: var(--font-size);
+      font-weight: var(--font-weight);
+      line-height: var(--line-height);
+      }
   }
-  textarea {
-    height: 15em;
+  select{
+    /*margin-right: 1em;*/
+      margin-bottom: 1.5rem;
+      margin-right: 1.0rem;
+      padding: 0.5rem;
+      /*margin-left: 1.0rem;*/
+      border: none;
+      border-bottom: 3px solid black;
+      color: rgba(115, 115, 115, 1);
+      width: 100%;
+      @media (min-width: 900px) {
+        font-size: var(--font-size);
+        font-weight: var(--font-weight);
+        line-height: var(--line-height);
+        }
   }
   input:focus,
-  textarea:focus {
-    background-color: #d9d9d9;
+  textarea:focus{
+    background: rgba(233, 233, 233, 1);
+  }
+  select:focus{
+    background-color: black;
+    color:white;
   } 
-  .bonbon {
+  select option{
+    background: white;
+    color: black;
+  }
+  /*.bonbon {
     width: 13em;
     height: 2em;
     font-size:1.25em; font-family: cursive; 
@@ -91,14 +172,60 @@
 }
 .bonbon{
     background: linear-gradient(to bottom, skyblue, blue);
-}
+}*/
 
-.h2-center {
+h2{
     display: block;
     text-align: center;
+
 }
-.h2-right{
-    display: block;
-    text-align: right;
-    margin-right: 0px;
+/*input checkbox{
+  width: 1.0rem;
+}*/
+input::placeholder{
+  font-family: inherit;
+  padding-left: 1.0rem;
+}
+textarea::placeholder{
+  padding-left: 3.0rem;
+  padding-top: 6.0rem;
+}
+#chbx{
+  width: 3%;
+  margin-top: 3.0rem;
+}
+form div {
+  display: inline-block;
+}
+select input{
+  width: 100%;
+}
+.kontakt-button{
+   width: 160px;
+  background: #1a1a1a;
+  color: white;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: auto;
+  margin-top: 1.5rem;
+  font-family: inherit;
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-m);
+  line-height: var(--line-height-m);
+  @media (min-width: 900px) {
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+    }
+}
+.kontakt-button:hover {
+  background: #3a3734;
+}
+.kontakt-button:active {
+  background: #d7be9d;
 }

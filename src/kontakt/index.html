@@ -1,44 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/main.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <header class="kontakt-hero">
-            <p>
-                 <a href="/index.html"><img src="/images/icons/logo.svg" alt="logo" class="img-logo2"></a>
-             </p>
-             <p class="p-burger2">
-                 <img src="/images/icons/burger_menu.svg" alt="hamburger" class="img-burger2">
-             </p>
-              <nav class="header-nav2">
-                 <ul class="nav-liste2">
-                     <li><a href="/das-cafe/index.html" class="nav-item2">das Café</a></li>
-                     <li><a href="/herkunft/index.html" class="nav-item2">Herkunft</a></li>
-                     <li> <a href="/shop/index.html" class="nav-item2">Shop</a></li>
-                     <li> <img src="/images/icons/tasche.svg" alt="tasche" class="tasche2"></li>
-                 </ul>
-             </nav>         
-        </header>
+      <header class="kontakt-hero">
+        <p>
+          <a href="/index.html"
+            ><img src="/images/icons/logo.svg" alt="logo" class="img-logo2"
+          /></a>
+        </p>
+        <p class="p-burger2">
+          <img
+            src="/images/icons/burger_menu.svg"
+            alt="hamburger"
+            class="img-burger2"
+          />
+        </p>
+        <nav class="header-nav2">
+          <ul class="nav-liste2">
+            <li>
+              <a href="/das-cafe/index.html" class="nav-item2">das Café</a>
+            </li>
+            <li>
+              <a href="/herkunft/index.html" class="nav-item2">Herkunft</a>
+            </li>
+            <li><a href="/shop/index.html" class="nav-item2">Shop</a></li>
+            <li>
+              <img
+                src="/images/icons/tasche.svg"
+                alt="tasche"
+                class="tasche2"
+              />
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-------------ENDE Header/ Anfang Kontaktformular-->
+      <section class="kontakt">
+        <h2 class="h2m">
+          Du hast Fragen?<br />
+          Schreib uns gern!
+        </h2>
         <form method="post">
-            <h2 class="h2m">Du hast Fragen?
-                Schreib uns gern!</h2>
-            <label>Name:</label>
-            <input type="text" name="name"> <br>
-            <label>E-Mail:</label>
-            <input type="email" name="email" required> <br>
-            <label>Betreff:</label>
-            <input type="text" name="betreff"> <br>
-            <label>Nachricht:</label>
-            <textarea rows="10" name="nachricht" required></textarea> <br>
-            <button class = "bonbon" type="submit">Jetzt abschicken!</button>
+          <fieldset>
+            <label class="label-name">Name*</label>
+            <input type="text" name="name" placeholder="Name" required /> 
+            <label>E-Mail*:</label>
+            <input type="email" name="email" placeholder="E-Mail" required /> 
+            <label>Telefonnummer</label>
+            <input type="tel" name="telefonnummer" placeholder="Telefonnummer"/>
+            <label for="fragen"></label>
+            <select name="fragen" id="fragen">
+              <option value="" disabled selected hidden>"Wähle einen Betreff aus"</option>
+              <option value="lieferung">Fragen zur Lieferung</option>
+              <option value="produkt">Fragen zum Produkt</option>
+              <option value="vertrieb">Vertriebsfragen</option>
+              <option value="nur_so">einfach nur so!</option>
+            </select><br>
+            <label>Deine Nachricht</label>
+            <textarea
+              rows="10"
+              name="nachricht"
+              placeholder="Was hast du auf dem Herzen?"
+              required
+            ></textarea>
+            <br/>
+            <input type="checkbox" id="chbx" name="agree" value="Yes!" />
+            <div>
+            <label for="chbx">Ich aktzeptiere die Datenschutzerklärung</label>
+            </div>
+            <button class="kontakt-button" type="submit">abschicken</button>
+          </fieldset>
         </form>
-    </main>  
-</body>
+      </section>
+      {{> footer }}
+    </main>
+  </body>
 </html>
