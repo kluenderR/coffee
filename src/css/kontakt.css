@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
   }
-  .kontakt-hero{
+ /* .kontakt-hero{
     display:flex;
     justify-content:space-between;
     padding-left: 24px;
@@ -51,7 +51,7 @@
   .tasche{
     color: black;
   }
-  }  
+  }  */
   /**********ENDE Header/ Anfang Kontaktformular*******************/
   .kontakt{
     display: flex;
