@@ -318,6 +318,7 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+ 
 }
 .container-sorte {
   background-color: white;
@@ -325,6 +326,10 @@ h2 {
   margin-right: 15px;
   margin-top: 60px;
   margin-bottom: 60px;
+  width: 45%;
+  @media (min-width: 900px) {
+    width: 20%;
+  }
 }
 .img-container {
   height: auto;
