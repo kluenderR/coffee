@@ -96,5 +96,11 @@ async function fetchProducts() {
   console.log(productsHtml);
   appContainer.innerHTML = productsHtml;
 }
-
+//var numeral = require('numeral');
+//var numeralDE = require('numeral/languages/de');
+//numeralDE.delimiters.thousands = '.';
+//numeral.language('de', numeralDE);
+//numeral.language('de');
+                
+//let prices = numeral(${product.price}).format('0.00€');
 fetchProducts();
