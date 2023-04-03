@@ -8,9 +8,51 @@
     <link rel="stylesheet" href="/css/main.css" />
 </head>
 <body>
+    {{> headers }}
+    <!--ENDE Header/ Anfang Shop -Seite------------------------------>
     <main>
-        {{> headers }}
-        <!--ENDE Header/ Anfang Sorten -Seite------------------------------>
+        <section class="shop-section">
+            <div class="shop-container">
+               <img src="/images/img/coffe-sorte.png" alt="Kaffe Sorte Costa Rica" class="img-shop">  
+            </div>
+            <div>
+            <h2 class="h2-shop">Costa Rica</h2>
+            <p class="text-shop">
+                Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine Säure. Den Gaumen umschmeichelt ein vollmundiges Haselnussaroma. Gleich probieren!  
+            </p>
+            </div>
+            
+                  <select name="menge" id="menge">
+                    <option value="" disabled selected hidden>"wie viel Kaffee brauchst du?"</option>
+                    <option value="kaffee1">250g gemahlen</option>
+                    <option value="kaffee2">500g gemahlen</option>
+                    <option value="kaffee3">250g Bohnen</option>
+                    <option value="kaffee4">500g Bohnen</option>
+                  </select><br>
+           <aside class="shop-icons">
+                   <div class="drin-shop">
+                       <p>
+                   <img src="/images/icons/bohnen.svg" alt="KaffeeBohne">
+                       </p>
+                       <p>Mild</p>
+                   </div>
+                   <div class="drin-shop">
+                       <p>
+                       <img src="/images/icons/french_press.svg" alt="French-Press">
+                       </p>
+                       <p>Für <br>Filterkaffee</p>
+                   </div>
+                   <div class="drin-shop">
+                       <p>
+                       <img src="/images/icons/schaufel.svg" alt="Schaufel">
+                       </p>
+                       <p>gemahlen</p>
+                   </div>
+           </aside>
+                    <div>
+                       <a class="drin-button2" href="shop/index.html">in den Warenkorb</a>
+                    </div>
+        </section>
     </main>
     <script src="/js/shop.js"></script>
 </body>

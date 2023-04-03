@@ -4,3 +4,133 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
   }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 1.5rem;
+  }
+  .shop-container {
+    background-color: #D7BE9D;
+    height: auto;
+    width: 100%;
+  }
+  section .img-shop{
+    /*background-color: blue;*/
+    /*object-fit: fill;*/
+    align-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .div-shop{
+    align-content: left;
+    align-items: flex-start;
+  }
+  .h2-shop{
+    margin-top: 1.5rem;
+    display: block;
+    text-align: left;
+    font-size: var(--h2-m-font-size);
+    font-weight: var(--h2-m-font-weight);
+    line-height: var(--h2-m-line-height);
+    @media (min-width: 576px) {
+        font-size: var(--h2-font-size);
+        font-weight: var(--h2-font-weight);
+        line-height: var(--h2-line-height); 
+    }
+  }
+  .text-shop{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-m);
+    line-height: var(--line-height-m);
+    @media (min-width: 576px) {
+    width:100%;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+    }
+  }
+  .shop-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 3px solid red;
+    height: auto;
+    width: 100%;
+    gap: 1rem;
+    align-content: center;
+  }
+  .drin-shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid blue;
+    height: auto;
+    width: 30%;
+  }
+  .drin-button {
+    width: 160px;
+    background: #1a1a1a;
+    color: white;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: auto;
+  }
+  .drin-button2 {
+    width: 160px;
+    background: #1a1a1a;
+    color: white;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: auto;
+    display: none;
+  }
+  .drin-button .drin-button2:hover {
+    background: #3a3734;
+  }
+  .drin-button .drin-button2:active {
+    background: #d7be9d;
+  }
+  @media (min-width: 576px) {
+  
+    section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 90%;
+    }
+  
+    .drin-button {
+      display: none;
+    }
+    .drin-button2 {
+      width: 160px;
+      background: #1a1a1a;
+      color: white;
+      box-sizing: border-box;
+      display: block;
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-left: 0px;
+      margin-right: auto;
+    }
+  }

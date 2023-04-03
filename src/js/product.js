@@ -74,7 +74,7 @@ async function fetchProducts() {
                     ${product.productName}
                 </p>
                 <p class="price-product">
-                    ${product.price}             
+                {((${product.price} / 100).toFixed(2)) + ("€"))}             
                 </p>
                 <p class="p-span">
                                 <span>
@@ -96,11 +96,13 @@ async function fetchProducts() {
   console.log(productsHtml);
   appContainer.innerHTML = productsHtml;
 }
-//var numeral = require('numeral');
-//var numeralDE = require('numeral/languages/de');
-//numeralDE.delimiters.thousands = '.';
-//numeral.language('de', numeralDE);
-//numeral.language('de');
-                
-//let prices = numeral(${product.price}).format('0.00€');
+/*function nummer (zahl){
+var numeral = require('numeral');
+var numeralDE = require('numeral/languages/de');
+numeralDE.delimiters.thousands = '.';
+numeral.language('de', numeralDE);
+numeral.language('de');               
+let prices = numeral(${product.price}).format('0.00€');
+return prices;
+}*/
 fetchProducts();
