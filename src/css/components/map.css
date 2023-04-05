@@ -1,0 +1,28 @@
+.h2l {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 34px;
+    margin-left: 24px;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @media (min-width: 576px) {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 56, 25px;
+    }
+  }
+  .div-map {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+  }
+  .div-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }

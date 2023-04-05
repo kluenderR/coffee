@@ -1,32 +1,4 @@
-/*body {
-  background: grey;
 
-  @media (min-width: 768px) {
-    color: red;
-  }
-}
-
-main {
-  margin: 0 auto;
-  max-width: 1440px;
-
-  & div {
-    color: yellow;
-
-    @media (min-width: 768px) {
-      color: var(--div-color);
-    }
-  }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-h2 {
-  font-size: var(--h2-font-size);
-}*/
 * {
   margin: 0;
   padding: 0;
@@ -43,40 +15,13 @@ h2 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /*position: relative;*/
-  /* background-image:url("../images/img/header_startseite.png");
-  background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.3);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: relative;
-  /*background-position: top;*/
 }
-/*.header-flex {
-  display:flex;
-  justify-content:space-between;
-  padding-left: 24px;
-  padding-right: 24px;
-
-}
-.img-logo{
-  height: 35px;
-  width: 35px;
-  filter: invert(94%) sepia(0%) saturate(26%) hue-rotate(104deg) brightness(105%) contrast(108%);
-  margin-top: 10px;
-  margin-right: 24px;
-}
-.img-burger{
-  height: 25px;
-  width: 25px;
-  filter: invert(94%) sepia(0%) saturate(26%) hue-rotate(104deg) brightness(105%) contrast(108%);
-  margin-top: 15px;
-}*/
 .section-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  height: auto;
   /*border: 1px solid black;*/
 }
 .h1 {
@@ -84,22 +29,22 @@ h2 {
   font-weight: 900;
   text-align: center;
   color: white;
-  padding-top: 148px;
+  padding-top: 4.5rem;
 }
-@media (min-width: 900px) {
+@media (min-width: 576px) {
   .h1 {
     font-size: 96px;
     font-weight: 900;
     text-align: center;
     color: white;
-    padding-top: 120px;
+    padding-top: 1.5rem;
   }
 }
 
 .text-header {
   text-align: center;
   color: white;
-  padding-bottom: 103px;
+  padding-bottom: 2.0rem;
 }
 .header-button {
   width: 160px;
@@ -290,6 +235,8 @@ h2 {
 }
 /*Anfang Sorten Seite***************************************/
 .sorten {
+  display: flex;
+  flex-direction: column;
   background-color: black;
   padding-left: 24px;
   padding-top: 60px;
@@ -302,6 +249,7 @@ h2 {
   font-weight: 900;
   line-height: 34px;
   text-align: left;
+  align-items: flex-start;
   color: white;
 }
 @media (min-width: 900px) {
@@ -459,7 +407,6 @@ Anfang Herkunft Section*/
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 3px solid red;
   height: auto;
   gap: 1rem;
 }
@@ -468,7 +415,6 @@ Anfang Herkunft Section*/
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border: 3px solid blue;
   height: auto;
   width: 40%;
 }
@@ -553,144 +499,6 @@ Anfang Herkunft Section*/
 }
 /*******************ENDE das steckt drin/Anfang Landkarte************/
 
-.h2l {
-  font-size: 36px;
-  font-weight: 900;
-  line-height: 34px;
-  margin-left: 24px;
-  margin-right: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  @media (min-width: 576px) {
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 56, 25px;
-  }
-}
-.div-map {
-  position: relative;
-  padding-bottom: 56%;
-  height: 0;
-  overflow: hidden;
-}
-.div-map iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/*************************ENDE MAP/ANFANG FOOTER*************************/
-/*footer {
-  background-color: #000;
-  color: #fff;
-  padding: 60px 25px 50px 25px;
 
-  @media (min-width: 900px) {
-    display: flex;
-    padding: 211px 25px 183px 25px;
-  }
-}
+/*************************ANFANG MAP/FOOTER*************************/
 
-.footer-content {
-  margin: 0 auto;
-  max-width: 1440px;
-  width: 100%;
-
-  @media (min-width: 900px) {
-    display: flex;
-  }
-}
-
-.footer-left-wrapper {
-  @media (min-width: 900px) {
-    margin-right: 10%;
-    position: relative;
-  }
-}
-
-.footer-logo {
-  margin-bottom: 1rem;
-  width: 70px;
-  filter: invert(94%) sepia(0%) saturate(26%) hue-rotate(104deg) brightness(105%) contrast(108%);
-
-  @media (min-width: 900px) {
-    position: absolute;
-    bottom: calc(100% + 1rem);
-  }
-}
-
-.footer-title {
-  font-size: 24px;
-  font-weight: 900;
-
-  @media (min-width: 900px) {
-    font-size: 42px;
-    line-height: 1;
-    margin-bottom: 1rem;
-  }
-}
-
-.footer-subtitle {
-  font-size: 18px;
-  margin-bottom: 2rem;
-}
-
-.footer-info-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 1rem;
-  margin-bottom: 2rem;
-
-  @media (min-width: 900px) {
-    display: block;
-    margin-right: 0;
-    width: 25%;
-  }
-}
-
-.footer-address-wrapper {
-  width: 50%;
-
-  @media (min-width: 900px) {
-    margin-bottom: 27px;
-    width: auto;
-  }
-}
-
-.footer-opening-times {
-  width: 50%;
-
-  @media (min-width: 900px) {
-    width: auto;
-  }
-}
-
-.footer-nav {
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: 900px) {
-    width: 25%;
-  }
-}
-  .footer-nav ul {
-    width: 50%;
-
-    @media (min-width: 900px) {
-      width: auto;
-    }
-  }
-    .footer-nav:first-child {
-      @media (min-width: 900px) {
-        order: 1;
-      }
-    }
-
-    & li {
-      & a {
-        color: #fff;
-      }
-    }*/
-/* }
-}*/

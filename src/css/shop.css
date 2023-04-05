@@ -55,26 +55,51 @@
     line-height: var(--line-height);
     }
   }
+  select input{
+    width: 100%;
+  }
+  #menge {
+    /*margin-right: 1em;*/
+      margin-bottom: 1.5rem;
+      margin-right: 1.0rem;
+      padding: 0.5rem;
+      /*margin-left: 1.0rem;*/
+      border: 3px solid black;
+      color: rgba(115, 115, 115, 1);
+      width: 100%;
+      @media (min-width: 576px) {
+        font-size: var(--font-size);
+        font-weight: var(--font-weight);
+        line-height: var(--line-height);
+        }
+  }
+  #menge:focus{
+    background-color: black;
+    color:white;
+  } 
+  #menge option{
+    background: white;
+    color: black;
+  }
   .shop-icons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: 3px solid red;
     height: auto;
     width: 100%;
     gap: 1rem;
     align-content: center;
+    margin-top: 1.5rem;
   }
   .drin-shop {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border: 3px solid blue;
     height: auto;
     width: 30%;
   }
-  .drin-button {
+  .shop-button {
     width: 160px;
     background: #1a1a1a;
     color: white;
@@ -87,7 +112,7 @@
     text-decoration: none;
     margin: auto;
   }
-  .drin-button2 {
+  .shop-button2 {
     width: 160px;
     background: #1a1a1a;
     color: white;
@@ -101,11 +126,34 @@
     margin: auto;
     display: none;
   }
-  .drin-button .drin-button2:hover {
+  .shop-button .drin-button2:hover {
     background: #3a3734;
   }
-  .drin-button .drin-button2:active {
+  .shop-button .drin-button2:active {
     background: #d7be9d;
+  }
+  .discription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 2.0rem;
+    margin-bottom: 2.0rem;
+    width: 100%;
+  }
+  .h3-shop{
+    margin-top: 1.5rem;
+    align-items: flex-start;
+    font-size: var(--h3-m-font-size);
+    font-weight: var(--h3-m-font-weight);
+    line-height: var(--h3-m-line-height);
+    @media (min-width: 576px) {
+        font-size: var(--h3-font-size);
+        font-weight: var(--h3-font-weight);
+        line-height: var(--h3-line-height); 
+  }
   }
   @media (min-width: 576px) {
   
@@ -113,13 +161,13 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      width: 90%;
+      width: 100%;
     }
   
-    .drin-button {
+    .shop-button {
       display: none;
     }
-    .drin-button2 {
+    .shop-button2 {
       width: 160px;
       background: #1a1a1a;
       color: white;
@@ -133,4 +181,130 @@
       margin-left: 0px;
       margin-right: auto;
     }
+    .shop-container{
+      max-width: 50%;
+    }
+  .neue-spalte{
+    width: 30%;
+    height: auto;
+    margin-left: 1.5rem;
   }
+  .discription{
+    width: 80%;
+    align-items: center;
+  }
+  }
+  /*Anfang Sorten Seite***************************************/
+.sorten {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding-left: 24px;
+  padding-top: 60px;
+  padding-right: 10px;
+  padding-bottom: 2em;
+  width: 100%;
+}
+.h2w {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 34px;
+  text-align: left;
+  align-items: flex-start;
+  color: white;
+}
+@media (min-width: 900px) {
+  .h2w {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 48px;
+    text-align: left;
+    color: white;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+.container-sorte {
+  background-color: white;
+  flex-grow: 1;
+  margin-right: 15px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 45%;
+  @media (min-width: 900px) {
+    width: 20%;
+  }
+}
+.img-container {
+  height: auto;
+  width: 100%;
+  object-fit: fill;
+}
+.container-price {
+  background-color: black;
+  padding-top: 1em;
+}
+.text-sorte {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: white;
+}
+.price-sorte {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #737373;
+  padding-top: 0.5em;
+}
+.span-bohne {
+  margin-right: 0.5em;
+  padding-top: 0.5em;
+  height: auto;
+  width: 16px;
+  filter: invert(94%) sepia(0%) saturate(26%) hue-rotate(104deg)
+    brightness(105%) contrast(108%);
+}
+.span-press {
+  margin-right: 0.5em;
+  padding-top: 0.5em;
+  height: auto;
+  width: 16px;
+  filter: invert(94%) sepia(0%) saturate(26%) hue-rotate(104deg)
+    brightness(105%) contrast(108%);
+}
+.span-schaufel {
+  margin-right: 0.5em;
+  padding-top: 0.5em;
+  height: auto;
+  width: 16px;
+  filter: invert(94%) sepia(0%) saturate(26%) hue-rotate(104deg)
+    brightness(105%) contrast(108%);
+}
+.sorten-button {
+  width: 160px;
+  background: #1a1a1a;
+  color: white;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: auto;
+}
+.sorten-button:hover {
+  background: #3a3734;
+}
+.sorten-button:active {
+  background: #d7be9d;
+}
+/******************Ende Sorten Section**************************/
