@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
   }
-  section {
+  .shop-section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -18,7 +18,7 @@
     height: auto;
     width: 100%;
   }
-  section .img-shop{
+  .shop-section .img-shop{
     /*background-color: blue;*/
     /*object-fit: fill;*/
     align-content: center;
@@ -157,7 +157,7 @@
   }
   @media (min-width: 576px) {
   
-    section {
+    .shop-section {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -236,7 +236,7 @@
   margin-top: 60px;
   margin-bottom: 60px;
   width: 45%;
-  @media (min-width: 900px) {
+  @media (min-width: 576px) {
     width: 20%;
   }
 }
