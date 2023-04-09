@@ -47,7 +47,7 @@ fetch("./public/products.json") // ask for json data
 async function fetchProducts() {
   const response = await fetch("/products.json");
   const products = await response.json();
-  console.log(products);
+  //alert (products);
 
   /*
   const productsHtml = products
@@ -63,6 +63,7 @@ async function fetchProducts() {
     })
     .join("");
     */
+/*https://stackoverflow.com/questions/149055/how-to-format-numbers-as-currency-strings*/
 
     const formatter = new Intl.NumberFormat('de-DE', {
       style: 'currency',
@@ -100,20 +101,10 @@ async function fetchProducts() {
     </a>
    `
     )
+    //join entfernt Trennzeichen 
     .join("");
 
   console.log(productsHtml);
   appContainer.innerHTML = productsHtml;
 }
-/*function nummer (){
-var numeral = require('numeral');
-var numeralDE = require('numeral/languages/de');
-numeralDE.delimiters.thousands = '.';
-numeral.language('de', numeralDE);
-numeral.language('de');               
-let prices = numeral(${product.price}.format('0.00€'));
-console.log(prices)
-return prices;
-}*/
-/*{((${product.price} / 100).toFixed(2)) + ("€"))}*/
 fetchProducts();

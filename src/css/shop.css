@@ -190,8 +190,11 @@
     margin-left: 1.5rem;
   }
   .discription{
-    width: 80%;
-    align-items: center;
+    display: block;
+    text-align: left;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
   }
   /*Anfang Sorten Seite***************************************/
