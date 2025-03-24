@@ -19,18 +19,18 @@ async function fetchProducts() {
 });*/
 
   //filter all products for product from id
-  const product = products.filter((product) => {
-    if (product.id == productId) {
-      return product;
+  const newArticel = products.filter((product) => {
+    if(product.id == productId) {
+    return product;
     }
-  })[0];
-  const productHtml = product;
- 
-  .map(
-    (product) => `
+})[0];
+
+  const productHtml = newArticel
+.map(
+    (_product) => `
     <section class="shop-section">
     <div class="shop-container">
-       <img src="/images/img/coffe-sorte.png" alt="Kaffe Sorte Costa Rica" class="img-shop">  
+       <img src="/images/img/coffe-sorte.png" alt="Kaffe Sorte Costa Rica" class="img-shop"> 
     </div>
     
     <div class="neue-spalte">
@@ -87,11 +87,12 @@ async function fetchProducts() {
 </article>
 console.log(product);
  `
-  )
+ )
   //join entfernt Trennzeichen 
-  /*.join("");*/
+  .join("");
  
   console.log(productHtml);
   appContainer.innerHTML = productHtml;
+  
 }
 fetchProducts();
